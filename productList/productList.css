@@ -1,0 +1,57 @@
+.navbar-brand{
+    font-size: 2rem;
+}
+.bi{
+    font-size: 1.5rem;
+}
+.category{
+    padding: 0.5rem;
+}
+.product{
+    padding-top: 2.5rem;
+}
+.main-nav{
+    background-color: #786364;
+}
+.login{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sub-nav{
+    background-color: #A79192;
+}
+.dropdown{
+    margin-left: 10px;
+}
+.cart-badge{
+    border: 1px red solid;
+    color: black;
+    border-radius: 25px;
+    font-size: 5px;
+    background: red;
+}
+.card > img{
+    filter: drop-shadow(3px 4px 4px);
+    width: 300px;
+    height: 330px;
+    transition: transform .8s;
+}
+
+.card > img:hover{
+    transform: scale(1.07);
+    width: 300px;
+    height: 330px;
+}
+.card .badge{
+    font-size: 5px;
+}
+
+/* 
+
+$color1: #F6E9E2;
+$color2: #CFC5C9;
+$color3: #A79192;
+$color4: #D2AEAD;
+$color5: #786364;
+
+*/
