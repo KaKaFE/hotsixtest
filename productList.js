@@ -2,7 +2,7 @@
 const productRow = document.querySelector('.product-li');
 
 // 서버에서 상품목록 받아오기
-fetch('/product.json')
+fetch('https://kakafe.github.io/hotsixtest/product.json')
     .then(response => response.json())
     .then(data => {
         console.log(data.products.length)
