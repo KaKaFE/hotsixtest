@@ -2,7 +2,7 @@
 const productRow = document.querySelector('.product-li');
 
 // 서버에서 상품목록 받아오기
-fetch('../product.json')
+fetch('/product.json')
     .then(response => response.json())
     .then(data => {
         console.log(data.products.length)
@@ -24,7 +24,7 @@ function render(obj) {
         productList += 
             `<div class="col-md-3">
                 <div class="card border-0">
-                <img src="../img/${i.thumnailImg}" class="card-img-top" alt="...">
+                <img src="./img/${i.thumnailImg}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${i.productName}
                     <span class="badge rounded-pill ${i.concept}">${i.concept}</span>
