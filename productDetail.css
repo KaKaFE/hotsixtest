@@ -1,0 +1,63 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.p-3 {
+  background-color: #a79192;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.productDetail {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 100px;
+}
+
+.productImage {
+  width: 500px;
+  height: 500px;
+  justify-self: end;
+}
+
+.productName,
+.productPrice,
+.productQuantity,
+.totalPrice {
+  font-size: large;
+  font-weight: bold;
+}
+
+.productName,
+.productPrice,
+.productQuantity,
+.colorOption,
+.cartSubmit,
+.productPurchaseButton,
+.totalPrice {
+  margin-top: 10px;
+}
+
+.colorOptionBtn,
+.cartSubmit,
+.productPurchaseButton {
+  background-color: #786364;
+  border: #786364;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qnaList,
+.review {
+  flex: 1;
+  margin: 0 10px;
+}

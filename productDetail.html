@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="productDetail.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="p-3">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#" class="nav-link px-2 text-white"><h1>Hot Six</h1></a>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-dark">장바구니</a></li>
+            <li><a href="#" class="nav-link px-2 text-dark">마이페이지</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark"
+              id="searchInput"
+              placeholder="상품찾기"
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="productDetail">
+        <img class="productImage" src="../../test.png" />
+        <div class="productOption">
+          <div class="productName">Something</div>
+          <div class="productPrice">30000</div>
+          <div class="productQuantity">
+            개수 <input class="productQuantityInput" type="number" />
+          </div>
+          <div class="colorOption">
+            <button
+              class="colorOptionBtn btn btn-primary d-inline-flex align-items-center"
+            >
+              색상 선택
+            </button>
+            <!-- <ul
+              class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px"
+              data-bs-theme="dark"
+            >
+              <li><a href="#">red</a></li>
+              <li><a href="#">blue</a></li>
+              <li><a href="#">yellow</a></li>
+              <li><a href="#">green</a></li>
+            </ul> -->
+          </div>
+          <button
+            class="cartSubmit btn btn-primary d-inline-flex align-items-center"
+          >
+            장바구니
+          </button>
+          <button
+            class="productPurchaseButton btn btn-primary d-inline-flex align-items-center"
+          >
+            구매하기
+          </button>
+          <div class="totalPrice">총 금액: 0 원</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="qnaList"><a href="#">qnA</a></div>
+        <div class="review"><a href="#">review</a></div>
+      </div>
+    </footer>
+    <script src="productDetail.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
