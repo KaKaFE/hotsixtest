@@ -13,7 +13,7 @@ fetchProducts();
 // 서버에서 상품목록 받아오기
 
 function fetchProducts() {
-    fetch('../product.json')
+    fetch('./product.json')
     .then(response => response.json())
     .then(data => {
         obj = data
@@ -52,7 +52,7 @@ function creatProductEl(product) {
     productEl.className = 'col-md-3';
     productEl.innerHTML =`
     <div class="card border-0">
-      <img src="../img/${product.thumnailImg}" class="card-img-top" alt="...">
+      <img src="./img/${product.thumnailImg}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">${product.productName}
           <span class="badge rounded-pill ${product.concept}">${product.concept}</span>
